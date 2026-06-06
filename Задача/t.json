@@ -1,14 +1,18 @@
-const http = require('node:http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-res.statusCode = 200;
-res.setHeader('Content-Type', 'text/plain; charset=utf-8;');
-res.end('Привет Октогон');
-});
-
-server.listen(port, hostname, () => {
-console.log(`Сервер запущен по адресу http://${hostname}:${port}/`);
-});
+{
+  "name": "my-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Понин Максим",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
