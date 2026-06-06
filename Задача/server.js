@@ -1,14 +1,11 @@
-const http = require('node:http');
+const express = require('express');
 
-const hostname = '127.0.0.1';
-const port = 3000;
+const app = express();
 
-const server = http.createServer((req, res) => {
-res.statusCode = 200;
-res.setHeader('Content-Type', 'text/plain; charset=utf-8;');
-res.end('<h1>Привет, Октагон!</h1>');
+app.get('/', (req, res) => {
+    res.send('<h1>Привет, Октагон!</h1>');
 });
 
-server.listen(port, hostname, () => {
-console.log(`Сервер запущен по адресу http://${hostname}:${port}/`);
+app.listen(3000, () => {
+    console.log('Сервер запущен на порту 3000');
 });
