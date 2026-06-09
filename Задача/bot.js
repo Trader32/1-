@@ -22,13 +22,13 @@ bot.onText(/\/help/, (msg) => {
 bot.onText(/\/site/, (msg) => {
     bot.sendMessage(
         msg.chat.id,
-        'https://octagon-students.ru/'
+        'https://octagon-students.ru/edu/about/16'
     );
 });
 
 bot.onText(/\/creator/, (msg) => {
     bot.sendMessage(
         msg.chat.id,
-        'Матюхин Тимур Васильевич'
+        'Пронин Максим Дмитриевич'
     );
 });
