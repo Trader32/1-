@@ -15,4 +15,16 @@
   "dependencies": {
     "express": "^4.18.2"
   }
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.22.4",
+    "node-telegram-bot-api": "^0.67.0"
+  }
 }
