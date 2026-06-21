@@ -1,0 +1,26 @@
+{
+  "name": "octagon-server",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Pronin Maksim",
+  "type": "commonjs",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "fuse.js": "^7.4.2",
+    "mysql2": "^3.22.5",
+    "node-cron": "^4.4.1",
+    "node-telegram-bot-api": "^0.61.0",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
